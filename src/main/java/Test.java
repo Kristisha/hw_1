@@ -10,6 +10,11 @@ import static java.lang.Thread.*;
 
 public class Test {
     public static void main(String[] args) throws InterruptedException {
+        Test.Test1();
+
+
+    }
+    public static void Test1() throws InterruptedException {
         WebDriver driver = initChromeDriver();
         driver.get("http://prestashop-automation.qatestlab.com.ua/admin147ajyvk0/");
         WebElement field = driver.findElement(By.id("email"));
@@ -18,10 +23,11 @@ public class Test {
         field1.sendKeys("Xcg7299bnSmMuRLp9ITw");
         WebElement button = driver.findElement(By.name("submitLogin"));
         button.submit();
+        Thread.sleep(4000);
         WebElement field2 = driver.findElement(By.className("img-thumbnail"));
-        field2.submit();
+        field2.click();
         //WebElement field3 = driver.findElement(By.id("header_logout"));
-       // field3.submit();
+        // field3.submit();
         //By locator = By.linkText("Клиенты");
         //WebElement searchLink = driver.findElement(locator);
         //searchLink.click();
@@ -36,7 +42,8 @@ public class Test {
         //driver.quit();
         //WebElement button = driver.findElement(By.name("go"));
         //button.click();
-    }
+
+            }
     public static WebDriver initChromeDriver() {
         System.setProperty("webdriver.chrome.driver", Test.class.getResource("chromedriver.exe").getPath());
         return new ChromeDriver();
