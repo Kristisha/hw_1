@@ -64,6 +64,15 @@ public class Test {
                 Thread.sleep(4000);
                 WebElement field3 = driver.findElement(By.className("page-title"));
                 System.out.println("Current page:" + field3.getText());
+                By locator1 = By.linkText("Dashboard");
+                WebElement searchLink1 = driver.findElement(locator1);
+                searchLink1.click();
+                WebElement field4 = driver.findElement(By.className("page-title"));
+                System.out.println(field4.getText());
+                driver.navigate().refresh();
+                Thread.sleep(4000);
+                WebElement field5 = driver.findElement(By.className("page-title"));
+                System.out.println("Current page:" + field5.getText());
             }
 
     public static WebDriver initChromeDriver() {
