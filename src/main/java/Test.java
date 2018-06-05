@@ -10,7 +10,7 @@ import static java.lang.Thread.*;
 
 public class Test {
     public static void main(String[] args) throws InterruptedException {
-        //Test.Test1();
+        Test.Test1();
         Test.Test2();
 
 
