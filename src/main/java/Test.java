@@ -18,7 +18,7 @@ public class Test {
         field1.sendKeys("Xcg7299bnSmMuRLp9ITw");
         WebElement button = driver.findElement(By.name("submitLogin"));
         button.submit();
-        WebElement field2 = driver.findElement(By.className(".imgm"));
+        WebElement field2 = driver.findElement(By.className("img-thumbnail"));
         field2.submit();
         //WebElement field3 = driver.findElement(By.id("header_logout"));
        // field3.submit();
