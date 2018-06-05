@@ -26,8 +26,8 @@ public class Test {
         Thread.sleep(4000);
         WebElement field2 = driver.findElement(By.className("img-thumbnail"));
         field2.click();
-        //WebElement field3 = driver.findElement(By.id("header_logout"));
-        // field3.submit();
+        WebElement field3 = driver.findElement(By.id("header_logout"));
+        field3.click();
         //By locator = By.linkText("Клиенты");
         //WebElement searchLink = driver.findElement(locator);
         //searchLink.click();
