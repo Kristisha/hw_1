@@ -145,7 +145,7 @@ public void BeforeTest(){
                 WebElement dynamicElement2 = (new WebDriverWait(e_driver, 10, 1000))
                         .until(ExpectedConditions.presenceOfElementLocated(By.linkText("Category1")));
                 WebElement field4 = e_driver.findElement(By.linkText("Category1"));
-                System.out.println(dynamicElement2.getText());
+                System.out.println(field4.getText());
 
             }
 
